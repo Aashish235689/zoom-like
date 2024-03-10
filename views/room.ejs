@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <script>
         const ROOM_ID= '<%= roomId %>'
     </script>
@@ -28,7 +29,28 @@
     </style>
 </head>
 <body>
-    <div id='video-grid'></div>
+    <!-- <div id='video-grid'></div> -->
+    <nav>
+        <div class="container">
+            <div class="logo">My Webpage</div>
+            <div class="navbar-buttons">
+                <button id="schedulesButton">Schedules</button>
+                <button id="flashcardsButton">Flashcards</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content" id="center-div">
+            <!-- Video element will be added dynamically here -->
+            <!-- bye -->
+            <!-- <video ></video> -->
+        </div>
+        <div class="side-content" id="video-grid">
+            <!-- Video elements will be added dynamically here -->
+          
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
